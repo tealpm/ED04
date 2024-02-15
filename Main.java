@@ -11,7 +11,7 @@ public class Main {
 
     /**
      * Inicializa un objeto de la clase CCuenta
-     * @param args Array para el programa
+     * @param args Array con los argumentos de línea de comandos cuando se ejecuta el programa
      */
     public static void main(String[] args) {
         CCuenta cuenta1;

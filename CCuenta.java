@@ -58,14 +58,14 @@ public class CCuenta {
 
     /**
      * Asigna un nombre de titular
-     * @param nombre
+     * @param nombre Nombre y apellido/s del titular
      */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
     /**
-     * Da la referencia numérica a la cuenta
+     * Da la referencia alfanumérica a la cuenta
      * @return El número de cuenta
      */
     public String getCuenta() {
@@ -74,7 +74,7 @@ public class CCuenta {
 
     /**
      * Asigna un número de cuenta
-     * @param cuenta
+     * @param cuenta Referencia alfanumérica de la cuenta
      */
     public void setCuenta(String cuenta) {
         this.cuenta = cuenta;
@@ -90,7 +90,7 @@ public class CCuenta {
 
     /**
      * Actualiza la cantidad en la cuenta
-     * @param saldo
+     * @param saldo Importe en cuenta
      */
     public void setSaldo(double saldo) {
         this.saldo = saldo;
@@ -106,7 +106,7 @@ public class CCuenta {
 
     /**
      * Asigna un tipo de interés
-     * @param tipoInterés
+     * @param tipoInterés Interés que se aplica a la cuenta
      */
     public void setTipoInterés(double tipoInterés) {
         this.tipoInterés = tipoInterés;
@@ -135,7 +135,7 @@ public class CCuenta {
 
     /**
      * Resta una cantidad al saldo en cuenta 
-     * @param cantidad
+     * @param cantidad Cifra que se quiere quitar de la cuenta
      * @throws Exception Si la cifra no es positiva o es mayor al total disponible
      */
     public void retirar(double cantidad) throws Exception
