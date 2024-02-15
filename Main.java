@@ -1,7 +1,18 @@
 package cuentas;
 
+/**
+ * Prueba la clase CCuenta
+ * @author sintetica
+ * @see CCuenta
+ * @author Paula MR solo refactorizó 3 cosas y añadió javadoc
+ * @version 1.0
+  */
 public class Main {
 
+    /**
+     * Inicializa un objeto de la clase CCuenta
+     * @param args Array para el programa
+     */
     public static void main(String[] args) {
         CCuenta cuenta1;
         double saldoActual;
@@ -13,7 +24,12 @@ public class Main {
         operativa_cuenta(cuenta1, 2300);
     }
 
-    static void operativa_cuenta(CCuenta cuenta1, float cantidad) {
+    /**
+     * Comprueba las operaciones de retirar e ingresar
+     * @param cuenta1 Instancia sobre la que realizar las operaciones
+     * @param cantidad Cifra para retirar
+     */
+    public static void operativa_cuenta(CCuenta cuenta1, float cantidad) {
         try {
             cuenta1.retirar(cantidad);
         } catch (Exception e) {
